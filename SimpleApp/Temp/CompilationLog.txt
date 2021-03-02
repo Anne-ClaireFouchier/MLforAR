@@ -1,0 +1,20 @@
+# Starting compiling Unity.Barracuda.ONNX.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-bc984b78cabe840d7822ee46f8388c50
+# Starting compiling Unity.Barracuda.iOSBLAS.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b16d7644399f3490c856e8ba32d0725f
+# Starting compiling Unity.Barracuda.BurstBLAS.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9662a023288194d6eac4c7432d67f949
+# Starting compiling Unity.XR.ARKit.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-eab48f47d7a284935a20c8c13c062c54
+# Starting compiling Unity.XR.ARSubsystems.Editor.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-23e11a363fdd6418a833d5aca15b082e
+# Starting compiling Unity.Mathematics.Editor.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-be6f718190e1d4e32800315d29ad9a38
+# Starting compiling Unity.XR.ARCore.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-3f60de46ced564d7b94fee0916c9f5cf
+# Starting compiling Unity.Barracuda.MacBLAS.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ff867059d77c9418689f0864e083bb9c
+# Starting compiling Unity.XR.ARFoundation.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7022ba15b892548599a8dddfd5fea929
+# Starting compiling Unity.MobiledgeX.Tests.asmdef.dll
+/Applications/Unity/Hub/Editor/2020.2.6f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5bfc083d7021e4810a060d83f7786a11

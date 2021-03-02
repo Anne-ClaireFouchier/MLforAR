@@ -43,7 +43,8 @@ public class PhoneARCamera : MonoBehaviour
 
     public enum Detectors{
         Yolo2_tiny,
-        Yolo3_tiny
+        Yolo3_tiny,
+        SSD
     };
     public Detectors selected_detector;
 
@@ -127,7 +128,7 @@ public class PhoneARCamera : MonoBehaviour
     {
         // Attempt to get the latest camera image. If this method succeeds,
         // it acquires a native resource that must be disposed (see below).
-        XRCpuImage image;
+        XRCpuImage image; // raw image from a device camera. Provides access to the raw image plane data, as well as conversion methods to convert to color and grayscale formats
         if (!cameraManager.TryAcquireLatestCpuImage(out image))
         {
             return;
@@ -169,8 +170,13 @@ public class PhoneARCamera : MonoBehaviour
         // Apply the updated texture data to our texture
         m_Texture.Apply();
 
+
+        /*
+                IT SEEMS LIKE THIS THIS WHERE I SHOULD DO BOTH LOCALIZATION AND DETECTION !!!
+        */
         // If bounding boxes are static for certain frames, start localization
-        if (staticNum > 150)
+        // if (staticNum > 150)
+        if (staticNum > 5)
         {
             localization = true;
         }
