@@ -21,7 +21,8 @@ public class AnchorCreator : MonoBehaviour
         m_RaycastManager = GetComponent<ARRaycastManager>();
         m_AnchorManager = GetComponent<ARAnchorManager>();
         GameObject cameraImage = GameObject.Find("Camera Image");
-        phoneARCamera = cameraImage.GetComponent<PhoneARCamera>();
+        //phoneARCamera = cameraImage.GetComponent<PhoneARCamera>();
+        phoneARCamera = cameraImage.GetComponent<CameraImageHandler>();
     }
 
     ARAnchor CreateAnchor(in ARRaycastHit hit)
@@ -72,15 +73,24 @@ public class AnchorCreator : MonoBehaviour
     void Update()
     {
         // If bounding boxes are not stable, return directly without raycast
+        /*
         if (!phoneARCamera.localization)
         {
             return;
         }
+        */
 
+        bboxes = phoneARCamera.m_BoundingBoxes;
+        boxSavedOutlines = bboxes.boxSavedOutlines;
+        shiftX = bboxes.shiftX;
+        shiftY = bboxes.shiftY;
+        scaleFactor = bboxes.scaleFactor;
+        /*
         boxSavedOutlines = phoneARCamera.boxSavedOutlines;
         shiftX = phoneARCamera.shiftX;
         shiftY = phoneARCamera.shiftY;
         scaleFactor = phoneARCamera.scaleFactor;
+        */
         // Remove outdated anchor that is not in boxSavedOutlines
         // Currently not using. Can be removed.
         if (anchorDic.Count != 0)
@@ -146,7 +156,8 @@ public class AnchorCreator : MonoBehaviour
     private float shiftY;
     private float scaleFactor;
 
-    public PhoneARCamera phoneARCamera;
+
+    // public PhoneARCamera phoneARCamera;
     public ARRaycastManager m_RaycastManager;
     public TextMesh anchorObj_mesh;
     public ARAnchorManager m_AnchorManager;
