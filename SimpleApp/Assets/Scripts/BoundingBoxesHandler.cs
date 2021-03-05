@@ -15,33 +15,43 @@ using System.Linq;
 using System.Collections;
 
 
-public class BoundingBoxesHandler : MonoBehaviour
-{
-    
+public class BoundingBoxesHandler : MonoBehavior
+{ 
     public float shiftX = 0f;
     public float shiftY = 0f;
     public float scaleFactor = 1;
 
     public Color colorTag = new Color(0.3843137f, 0, 0.9333333f);
-    //private static GUIStyle labelStyle;
-    public static GUIStyle labelStyle;
-    //private static Texture2D boxOutlineTexture;
-    public static Texture2D boxOutlineTexture;
+    private static GUIStyle labelStyle;
+    private static Texture2D boxOutlineTexture;
 
     // bounding boxes detected for current frame
     private IList<BoundingBox> boxOutlines;
-    
+
     // bounding boxes detected across frames
     public List<BoundingBox> boxSavedOutlines = new List<BoundingBox>();
-    
 
+    
+    public void Initialize()
+    {
+        this.boxOutlineTexture = new Texture2D(1, 1);
+        this.boxOutlineTexture.SetPixel(0, 0, this.colorTag);
+        this.boxOutlineTexture.Apply();
+
+        this.labelStyle = new GUIStyle();
+        this.labelStyle.fontSize = 50;
+        this.labelStyle.normal.textColor = this.colorTag;
+    }
+
+    public void UpdateBoundingBoxes()
+    {
+
+    }
 
     public void ClearAll()
     {
-        // clear boubding box containers
-        boxSavedOutlines.Clear();
-        boxOutlines.Clear();
-        // clear anchor
+        this.boxSavedOutlines.Clear();
+        this.boxOutlines.Clear();
     }
 
     
@@ -187,11 +197,6 @@ public class BoundingBoxesHandler : MonoBehaviour
 
         this.scaleFactor = smallest / (float)inputSize;
     }
-
-   
-
-
-   
 
 
     private void DrawBoxOutline(BoundingBox outline, float scaleFactor, float shiftX, float shiftY)

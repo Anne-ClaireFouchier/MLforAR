@@ -13,6 +13,7 @@ using System.IO;
 using TFClassify;
 using System.Linq;
 using System.Collections;
+using BoundingBoxesHandler;
 
 public class CameraImageHandler : MonoBehaviour
 {
@@ -42,8 +43,8 @@ public class CameraImageHandler : MonoBehaviour
     public Detector detector = null;
 
     public BoundingBoxesHandler m_BoundingBoxes = new BoundingBoxesHandler();
+    m_BoundingBoxes.Initialize();
 
-    
     // lock model when its inferencing a frame
     private bool isDetecting = false;
     Texture2D m_Texture;
