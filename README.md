@@ -28,12 +28,20 @@ If the network has the right format, it will appear as follow :
 
 
 
+
+
+The detection happens in the script *PhoneARCamera* 
+<img width="1680" alt="Capture d’écran 2021-06-14 à 12 11 47" src="https://user-images.githubusercontent.com/61414950/121882145-70c40f00-cd10-11eb-80a9-eaa978888bab.png">
+
+
+
+
 ## Plugins
 
 With the following Plugins, I was able to run the examples but I was not able to integrate ARFoundation in order to put AR augmentations with [ARFoundation](https://github.com/Unity-Technologies/arfoundation-samples) to the scenes. 
 
 ### Mediapipe plugin
-[MediaPipeUnityPlugin](https://github.com/homuler/MediaPipeUnityPlugin)   
+[MediaPipeUnityPlugin](https://github.com/homuler/MediaPipeUnityPlugin) implements the following [Mediapipe](https://google.github.io/mediapipe/) functionnalities : 
 
 + Face Detection
 + Face Mesh
@@ -47,11 +55,11 @@ With the following Plugins, I was able to run the examples but I was not able to
 + Instant Motion Tracking
 + Objectron	
 
-It does not recognize my camera on the phone.
+It does not recognize my camera on the phone and I wan not able to add any AR functionalities. 
 
 ### TensorFlow Plugin
 
-[tf-lite-unity-sample](https://github.com/asus4/tf-lite-unity-sample) ports some TF-lite models into Unity :
+[tf-lite-unity-sample](https://github.com/asus4/tf-lite-unity-sample) the following functionalities into Unity :
 
 + TensorFlow
   * MNIST
@@ -70,7 +78,6 @@ It does not recognize my camera on the phone.
 + MLKit
   * Blaze Pose (Full body)
 + Meet Segmentation
-
 
 
 
