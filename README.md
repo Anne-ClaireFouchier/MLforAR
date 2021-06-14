@@ -1,12 +1,12 @@
 # Distortions
-In [Data_Augmentation](./Data_Augmentation/Distortions.ipynb), you will find a notebook applying distortions from [CollabAR](https://github.com/CollabAR-Source/CollabAR-Code)[(paper)](https://ieeexplore.ieee.org/abstract/document/9111024).
+In [Data_Augmentation](Data_augmentation/Distortions.ipynb), you will find a notebook applying distortions from [CollabAR](https://github.com/CollabAR-Source/CollabAR-Code) [(paper)](https://ieeexplore.ieee.org/abstract/document/9111024) and [imgaug.augmenters](https://imgaug.readthedocs.io/en/latest/source/overview/imgcorruptlike.html).
 
-# Augmented Reality in Unity
+# Deep learning in Unity
 ## Barracuda
 [Unity_Detection2AR](https://github.com/derenlei/Unity_Detection2AR) is a great application for using Barracuda. 
 [arfoundation-samples](https://github.com/Unity-Technologies/arfoundation-samples).
 
-![Barracuda](https://user-images.githubusercontent.com/61414950/121860532-3a2eca00-ccf9-11eb-8140-7e2fbb556454.png)
+<img src="https://user-images.githubusercontent.com/61414950/121860532-3a2eca00-ccf9-11eb-8140-7e2fbb556454.png" height="800">
 
 ## Mediapipe plugin
 
