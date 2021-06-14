@@ -1,8 +1,3 @@
-This project 
-
-# Distortions
-[Data_augmentation/Distortions.ipynb](Data_augmentation/Distortions.ipynb), you will find a notebook applying distortions from [CollabAR](https://github.com/CollabAR-Source/CollabAR-Code) [(paper)](https://ieeexplore.ieee.org/abstract/document/9111024) and [imgaug.augmenters](https://imgaug.readthedocs.io/en/latest/source/overview/imgcorruptlike.html).
-
 # Deep learning in Unity
 ## Barracuda 
 
@@ -83,7 +78,17 @@ It does not recognize my camera on the phone and I wan not able to add any AR fu
 
 # Deep learning with Android Studio
 
-# AR Core Android Studio
+## AR Core Android Studio
+
+[Documentation](https://developers.google.com/ar/develop/java/quickstart)
+
+[API](https://github.com/google-ar/arcore-android-sdk)
+
+
+
+
+
+
 
 # Depth estimation
 
@@ -100,10 +105,12 @@ It does not recognize my camera on the phone and I wan not able to add any AR fu
 
 
 
+# Distortions
+[Data_augmentation/Distortions.ipynb](Data_augmentation/Distortions.ipynb) gathers distortions from [CollabAR](https://github.com/CollabAR-Source/CollabAR-Code) [(paper)](https://ieeexplore.ieee.org/abstract/document/9111024) and [imgaug.augmenters](https://imgaug.readthedocs.io/en/latest/source/overview/imgcorruptlike.html).
+
+
 # More links on depth
 
-# Model conversion
-![TFLite_framework(2)](https://user-images.githubusercontent.com/61414950/121860488-300ccb80-ccf9-11eb-971e-9eefe331bd38.png)
 
 
 
