@@ -11,9 +11,6 @@ In [Data_Augmentation](./Data_Augmentation/Distortions.ipynb), you will find a n
 ## Mediapipe plugin
 
 
-
-
-
 ## TensorFlow Plugin
 
 
@@ -23,6 +20,8 @@ In [Data_Augmentation](./Data_Augmentation/Distortions.ipynb), you will find a n
 # AR Core Android Studio
 
 # Depth estimation
+
+## MobilePyDnet
 [MobilePyDnet](https://github.com/FilippoAleotti/mobilePydnet) based on the [PyDnet](https://github.com/mattpoggi/pydnet) architecture, trained with [knowledge distillation](https://arxiv.org/abs/1503.02531) of [MiDaS](https://github.com/intel-isl/MiDaS)
 
 
@@ -30,7 +29,7 @@ In [Data_Augmentation](./Data_Augmentation/Distortions.ipynb), you will find a n
 ![distillation](https://user-images.githubusercontent.com/61414950/121861238-f38d9f80-ccf9-11eb-8435-38e43cf6228b.png)
 
 
-
+## FastDepth
 [FastDepth](http://fastdepth.mit.edu)
 
 
