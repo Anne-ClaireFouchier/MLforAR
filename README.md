@@ -92,6 +92,8 @@ It does not recognize my camera on the phone and I wan not able to add any AR fu
 
 # Depth estimation
 
+We evaluated two real-time monocular depth estimation networks: MobilePyDnet and FastDepth. Monocular because we cannot expect all smartphones to have more sensors than at least one camera. These networks work particularly well indoors. 
+
 ## MobilePyDnet
 [MobilePyDnet](https://github.com/FilippoAleotti/mobilePydnet) based on the [PyDnet](https://github.com/mattpoggi/pydnet) architecture, trained with [knowledge distillation](https://arxiv.org/abs/1503.02531) of [MiDaS](https://github.com/intel-isl/MiDaS)
 
