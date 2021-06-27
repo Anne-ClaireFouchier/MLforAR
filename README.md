@@ -75,6 +75,13 @@ It does not recognize my camera on the phone and I wan not able to add any AR fu
 + Meet Segmentation
 
 
+# Debug
+
+Follow [https://answers.unity.com/questions/1320966/android-debug-usb.html](https://answers.unity.com/questions/1320966/android-debug-usb.html)
+adb devices -l
+adb logcat -s Unity DEBUG
+
+
 
 # Deep learning with Android Studio
 
