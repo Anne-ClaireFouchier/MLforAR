@@ -91,11 +91,9 @@ adb logcat -s Unity DEBUG
 
 [Documentation](https://developers.google.com/ar/develop/java/quickstart)
 
-[API](https://github.com/google-ar/arcore-android-sdk)
+[ARCore API](https://github.com/google-ar/arcore-android-sdk)
 
-
-
-
+[TensorFlow Lite for Android](https://www.tensorflow.org/lite/guide/android)
 
 
 
@@ -104,23 +102,20 @@ adb logcat -s Unity DEBUG
 We evaluated two real-time monocular depth estimation networks: MobilePyDnet and FastDepth. Monocular because we cannot expect all smartphones to have more sensors than at least one camera. These networks work particularly well indoors. 
 
 ## MobilePyDnet
-[MobilePyDnet](https://github.com/FilippoAleotti/mobilePydnet) based on the [PyDnet](https://github.com/mattpoggi/pydnet) architecture, trained with [knowledge distillation](https://arxiv.org/abs/1503.02531) of [MiDaS](https://github.com/intel-isl/MiDaS)
+[MobilePyDnet](https://github.com/FilippoAleotti/mobilePydnet) is based on the [PyDnet](https://github.com/mattpoggi/pydnet) architecture, and trained with [knowledge distillation](https://arxiv.org/abs/1503.02531) of [MiDaS](https://github.com/intel-isl/MiDaS).
 
-
+To get a single inference, use their [single_inference](https://github.com/FilippoAleotti/mobilePydnet/tree/v2/single_inference) folder. It is in TensorFlow 1. You do not need to migrate it to TensorFlow 2, just create a virtual environment. 
 
 ![distillation](https://user-images.githubusercontent.com/61414950/121861238-f38d9f80-ccf9-11eb-8435-38e43cf6228b.png)
 
 
 ## FastDepth
-[FastDepth](http://fastdepth.mit.edu)
+To use [FastDepth](http://fastdepth.mit.edu), also create a virtual environment. 
 
 
 
 # Distortions
 [Data_augmentation/Distortions.ipynb](Data_augmentation/Distortions.ipynb) gathers distortions from [CollabAR](https://github.com/CollabAR-Source/CollabAR-Code) [(paper)](https://ieeexplore.ieee.org/abstract/document/9111024) and [imgaug.augmenters](https://imgaug.readthedocs.io/en/latest/source/overview/imgcorruptlike.html).
-
-
-# More links on depth
 
 
 
