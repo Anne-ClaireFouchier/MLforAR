@@ -11,7 +11,7 @@ They make use of [arfoundation-samples](https://github.com/Unity-Technologies/ar
 Here is how deep learning networks are added into Unity through Barracuda : 
 <img src="https://user-images.githubusercontent.com/61414950/121860532-3a2eca00-ccf9-11eb-8140-7e2fbb556454.png" height="800">
 
-The model needs to be converted into ONNX or Barracuda format.
+The model needs to be converted into ONNX or Barracuda format. These two formats support different operators. 
 
 Instructions [here](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/Exporting.html) to convert from Pytorch, TensorFlow or Keras to ONNX. 
 
