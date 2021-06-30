@@ -3,7 +3,7 @@
 
 Barracuda ([documentation](https://docs.unity3d.com/Packages/com.unity.barracuda@1.0/manual/index.html)) is a lightweight cross-platform library for neural network inference.
 
-[Unity_Detection2AR](https://github.com/derenlei/Unity_Detection2AR) is a great (and one a very few) example for using Barracuda. 
+[Unity_Detection2AR](https://github.com/derenlei/Unity_Detection2AR) is a great (and one a very few) example for using Barracuda. You can use Detection2AR_apk.apk to run the simulation. 
 
 They make use of [arfoundation-samples](https://github.com/Unity-Technologies/arfoundation-samples), which demonstrates the functionnalities of the ARFoundation package, allowing for AR functionnalities.
 
@@ -100,6 +100,8 @@ adb logcat -s Unity DEBUG
 # Depth estimation
 
 We evaluated two real-time monocular depth estimation networks: MobilePyDnet and FastDepth. Monocular because we cannot expect all smartphones to have more sensors than at least one camera. These networks work particularly well indoors. 
+
+Please use view3Ddepth.py to create the pointcloud that can later be vizualized in MeshLab. 
 
 ## MobilePyDnet
 [MobilePyDnet](https://github.com/FilippoAleotti/mobilePydnet) is based on the [PyDnet](https://github.com/mattpoggi/pydnet) architecture, and trained with [knowledge distillation](https://arxiv.org/abs/1503.02531) of [MiDaS](https://github.com/intel-isl/MiDaS).
